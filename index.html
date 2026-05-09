@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raghav Goyal</title>
+  <meta name="description" content="Contact Raghav" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Animated background orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+
+  <!-- Particle canvas -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <main class="container">
+
+    <!-- ── Profile ── -->
+    <section class="profile" aria-label="Profile">
+      <div class="profile-panel" id="profile-panel">
+        <div class="profile-panel-glow"></div>
+        <div class="profile-panel-content">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring"></div>
+            <div class="avatar" id="avatar">
+              <span class="avatar-initials">RG</span>
+            </div>
+            <div class="avatar-pulse"></div>
+          </div>
+
+          <div class="name-row">
+            <h1 class="name">Raghav Goyal</h1>
+            <span class="alias">aka Socrates</span>
+          </div>
+
+          <p class="tagline">Developer &nbsp;·&nbsp; Liver? &nbsp;·&nbsp; Learner</p>
+
+          <!-- Status badge -->
+          <div class="status-badge" aria-label="Current status">
+            <span class="status-dot"></span>
+            <span>Open to opportunities</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Layout Grid Wrapper ── -->
+    <div class="content-grid">
+      <div class="content-col left-col">
+        <!-- ── Bio ── -->
+        <section class="bio-section" aria-label="About">
+          <p class="bio">
+        CS student who writes code by day and overthinks by night.
+        Building things that hopefully don't break in production.
+        Powered by curiosity, caffeine, and the belief that I'm
+        God's favourite - still waiting on the confirmation email. 📬
+      </p>
+    </section>
+
+    <!-- ── Currently ── -->
+    <section class="currently-section" aria-label="What I'm up to">
+      <h2 class="section-heading">
+        <span class="section-heading-icon">⚡</span> Currently
+      </h2>
+      <div class="currently-grid">
+        <div class="currently-card">
+          <span class="currently-icon">🛠️</span>
+          <div>
+            <span class="currently-label">Building</span>
+            <span class="currently-value">ZenFlow - a productivity platform</span>
+          </div>
+        </div>
+        <div class="currently-card">
+          <span class="currently-icon">📚</span>
+          <div>
+            <span class="currently-label">Learning</span>
+            <span class="currently-value">System design & distributed systems</span>
+          </div>
+        </div>
+        <div class="currently-card">
+          <span class="currently-icon">🎮</span>
+          <div>
+            <span class="currently-label">Playing</span>
+            <span class="currently-value">Antigravity</span>
+          </div>
+        </div>
+        <div class="currently-card">
+          <span class="currently-icon">📍</span>
+          <div>
+            <span class="currently-label">Based in</span>
+            <span class="currently-value">India 🇮🇳</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Interests / Skills chips ── -->
+    <section class="chips-section" aria-label="Interests and skills">
+      <h2 class="section-heading">
+        <span class="section-heading-icon">🧠</span> Into
+      </h2>
+      <div class="chips" role="list">
+        <span class="chip" role="listitem">Python</span>
+        <span class="chip" role="listitem">JavaScript</span>
+        <span class="chip" role="listitem">Web Dev</span>
+        <span class="chip" role="listitem">AI / ML</span>
+        <span class="chip" role="listitem">Open Source</span>
+        <span class="chip" role="listitem">Philosophy</span>
+        <span class="chip" role="listitem">Gaming</span>
+        <span class="chip" role="listitem"> Humour</span>
+        <span class="chip" role="listitem">Productivity</span>
+        <span class="chip" role="listitem">Comedy</span>
+      </div>
+    </section>
+
+      </div>
+
+      <div class="content-col right-col">
+        <!-- ── Social Links ── -->
+        <section class="links" aria-label="Social links">
+          <h2 class="section-heading">
+        <span class="section-heading-icon">🔗</span> Find me on
+      </h2>
+
+      <a id="link-instagram" href="https://instagram.com/godsfavouriteraghvv" target="_blank" rel="noopener noreferrer"
+        class="link-card instagram" aria-label="Instagram - @godsfavouriteraghvv">
+        <div class="link-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5.5" stroke="currentColor" stroke-width="1.8" />
+            <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="link-text">
+          <span class="link-label">Instagram</span>
+          <span class="link-handle">@godsfavouriteraghvv</span>
+        </div>
+        <div class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="link-shimmer"></div>
+      </a>
+
+      <a id="link-discord" href="https://discord.com/users/socrateeees" target="_blank" rel="noopener noreferrer"
+        class="link-card discord" aria-label="Discord - @socrateeees">
+        <div class="link-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026c.462-.62.874-1.275 1.226-1.963a.075.075 0 0 0-.041-.104 13.201 13.201 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028zM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38 0-1.312.956-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.311-.956 2.38-2.157 2.38zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38 0-1.312.955-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.311-.946 2.38-2.157 2.38z" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="link-text">
+          <span class="link-label">Discord</span>
+          <span class="link-handle">@socrateeees</span>
+        </div>
+        <div class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="link-shimmer"></div>
+      </a>
+
+      <a id="link-linkedin" href="https://linkedin.com/in/raghav-goyal-216a913b4" target="_blank" rel="noopener noreferrer"
+        class="link-card linkedin" aria-label="LinkedIn - Raghav Goyal">
+        <div class="link-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.8" />
+          </svg>
+        </div>
+        <div class="link-text">
+          <span class="link-label">LinkedIn</span>
+          <span class="link-handle">raghav-goyal</span>
+        </div>
+        <div class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="link-shimmer"></div>
+      </a>
+
+      <a id="link-github" href="https://github.com/raghavatgit" target="_blank" rel="noopener noreferrer"
+        class="link-card github" aria-label="GitHub - @raghavatgit">
+        <div class="link-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="link-text">
+          <span class="link-label">GitHub</span>
+          <span class="link-handle">@raghavatgit</span>
+        </div>
+        <div class="link-arrow">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="link-shimmer"></div>
+      </a>
+
+    </section>
+
+    <!-- ── Quote ── -->
+    <blockquote class="quote-section" aria-label="Favourite quote">
+      <p class="quote-text">"The unexamined life is not worth living."</p>
+      <cite class="quote-author">- Socrates&nbsp;&nbsp;(my spirit animal)</cite>
+      </blockquote>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Made with <span class="heart">♥</span> · 2026</p>
+    </footer>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
