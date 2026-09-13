@@ -1,4 +1,4 @@
-/* ===== script.js — Elite 3D Environment & Interactions ===== */
+/* ===== script.js: 3D Spatial Environment & Interactions ===== */
 
 let mouseX = window.innerWidth / 2;
 let mouseY = window.innerHeight / 2;
@@ -101,7 +101,7 @@ window.addEventListener('resize', () => {
 
 // ── Vanilla Tilt 3D Effects ──────────────────────────────
 
-// Profile panel — hero card with pronounced 3D tilt
+// Profile panel: hero card with pronounced 3D tilt
 VanillaTilt.init(document.querySelector("#profile-panel"), {
   max: 15,
   speed: 600,
@@ -114,7 +114,7 @@ VanillaTilt.init(document.querySelector("#profile-panel"), {
   gyroscope: true
 });
 
-// Other interactive cards — subtler tilt
+// Other interactive cards: subtler tilt
 VanillaTilt.init(document.querySelectorAll(".link-card, .currently-card, .bio, .quote-section, .chip"), {
   max: 10,
   speed: 800,
@@ -153,12 +153,15 @@ cards.forEach((card) => {
   });
 });
 
-// Inject ripple keyframe
-const style = document.createElement('style');
-style.textContent = `
-  @keyframes eliteRipple {
-    0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
-    100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
-  }
-`;
-document.head.appendChild(style);
+// Inject ripple keyframe with single-instance DOM guard
+if (!document.getElementById('elite-ripple-style')) {
+  const style = document.createElement('style');
+  style.id = 'elite-ripple-style';
+  style.textContent = `
+    @keyframes eliteRipple {
+      0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
+      100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
+    }
+  `;
+  document.head.appendChild(style);
+}
