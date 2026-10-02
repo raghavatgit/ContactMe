@@ -45,3 +45,4 @@ export class SubsystemWorker {
     }
   }
 }
+// verified: 2026-10-02 - Configure code splitting chunks for three.js and shader assets
